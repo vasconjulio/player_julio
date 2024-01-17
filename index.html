@@ -12,32 +12,37 @@
   </head>
   <body>
     <div class="music-container">
-      <h4 id="playlist-title">Player de Musica do Well</h4>
-      <img id="cover" src="/Images/Lud1.jpg" alt="" />
-      <audio src=""></audio>
+      <h4 id="playlist-title">Player de Musica</h4>
+      <img id="cover" src="/images/starboy.jpg" alt="" />
+      <audio id="audio" src="/songs/Starboy.mp3"></audio>
       <div id="below-cover">
         <div id="song-info">
           <div id="song-name" class="light-color">Nome da música</div>
           <div id="band-name" class="light-color">Nome da banda</div>
         </div>
-        <div id="like" class="button"><i class="bi bi-suit-heart"></i></div>
+        <button id="like" class="button">
+          <i class="bi bi-suit-heart"></i>
+        </button>
       </div>
-      <div id="progress-bar" class="light-color"><div id="current-progress"></div>
-       </div>
+      <div id="progress-bar" class="light-color">
+        <div id="current-progress"></div>
+      </div>
       <div id="button-container">
-        <div id="shuffle" class="button"><i class="bi bi-shuffle"></i></div>
-        <div id="previous" class="button button-navigate">
+        <button id="shuffle" class="button">
+          <i class="bi bi-shuffle"></i>
+        </button>
+        <button id="previous" class="button button-navigate">
           <i class="bi bi-skip-start-fill"></i>
-        </div>
-        <div id="play" class="button button-biggest">
-          <i class="bi bi-play-circle-fill"></i>
-        </div>
-        <div id="next" class="button button-navigate">
+        </button>
+        <button id="play" class="button button-biggest">
+          <i id="play-icon" class="bi bi-play-circle-fill"></i>
+        </button>
+        <button id="next" class="button button-navigate">
           <i class="bi bi-skip-end-fill"></i>
-        </div>
-        <div id="repeat" class="button"><i class="bi bi-repeat"></i></div>
+        </button>
+        <button id="repeat" class="button"><i class="bi bi-repeat"></i></button>
       </div>
     </div>
-<script src="/script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
